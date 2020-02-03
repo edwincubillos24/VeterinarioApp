@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_owner">
+
+    <fragment
+        android:id="@+id/navigation_owner"
+        android:name="com.edwinacubillos.veterinarioapp.ui.owner.OwnerFragment"
+        android:label="@string/title_owner"
+        tools:layout="@layout/fragment_owner" />
+
+    <fragment
+        android:id="@+id/navigation_pet"
+        android:name="com.edwinacubillos.veterinarioapp.ui.pet.PetFragment"
+        android:label="@string/title_pet"
+        tools:layout="@layout/fragment_pet" />
+</navigation>
